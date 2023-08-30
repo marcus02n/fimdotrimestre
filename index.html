@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width-device-width", initial-scale="1.0">
+      <title>AluraBooks</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="reset.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  </head>
+   <body>
+      <header class="cabeçalho">
+         <div class="container">
+          <input type="checkbox" id="menu" class="container__botao">
+          <label for="menu">
+            <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+          </label>
+          <ul class="lista-menu">
+            <li class="lita-menu__titulo">Categorias</li>
+            <li class="lista-menu__item">
+               <a href="#" class="lista-menu__link">Programação</a>
+            </li>
+            <li class="lista-menu__item">
+               <a href="#" class="lista-menu__link">Front-end</a>  
+            </li>
+            <li class="lista-menu__item"></li>
+               <a href="#" class="lista-menu__link">Infraestrutura</a>  
+            </li>
+            <li class="lista-menu__item"></li>
+               <a href="#" class="lista-menu__link">Business</a>
+         </li>  
+         <li class="lista-menu__item"></li>
+               <a href="#" class="lista-menu__link">Design & UX</a>
+         </li>   
+         </ul>
+          <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem"> 
+         </div>
+         <div class="container">
+          <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+          <a href="#"><img src="img/Compras.svg" alt="Sacola de compras" class="container__imagem"></a>
+          <a href="#"><img src="img/Usuário.svg" alt="Meu perfil"       class="container__imagem"></a>
+         </div>
+  </header>
+
+  <section class="banner">
+        <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+        <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento! </p>
+        <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+  </section>
+<section class="carrossel">
+   <h2 class="carrossel__titulo">Novos lançamentos</h2>
+
+<div class="swiper">
+   <div class="swiper-pagination"></div>  
+   <div class="swiper-wrapper">
+     <div class="swiper-slide"><img src="img/ApacheKafka.png" alt="livro sobre apache kafka e spring boot da Alurabooks"></div>
+     <div class="swiper-slide"><img src="img/Javascript.png" alt="livro sobre Javascript da Alurabooks"></div>
+     <div class="swiper-slide"><img src="img/Portugol.png" alt="livro sobre Portugol da AluraBooks"></div>
+     <div class="swiper-slide"><img src="img/Tuning.png" alt="Livro sobre Tuning de SQL da AluraBooks"></div>
+     <div class="swiper-slide"><img src="img/Nodejs.png" alt="Livro sobre Node.js da AluraBooks"></div>
+     <div class="swiper-slide"><img src="img/Arquitetura.png" alt="Livro sobre Arquitetura de Software da AluraBooks"></div>
+     <div class="swiper-slide"><img src="img/ReactNative.png" alt="Livro sobre React Native da AluraBooks"></div>
+     <div class="swiper-slide"><img src="img/Liderança.png" alt="Livro sobre Liderança em Design AluraBooks"></div>
+     <div class="swiper-slide"><img src="img/MetricasAgeis.png" alt="Livro sobre Métricas Ágeis da AluraBooks"></div>
+     <div class="swiper-slide"><img src="img/Gestão.png" alt="Livro sobre Gestão da AluraBooks"></div>
+     <div class="swiper-slide"><img src="img/Gestão2.png" alt="Livro sobre Gestão de Produtos da AluraBooks"></div>
+     <div class="swiper-slide"><img src="img/Construct2.png" alt="Livro sobre Construct 2 da AluraBooks"></div>
+     <div class="swiper-slide"><img src="img/UX.png" alt="Livro sobre UX Estratégico da AluraBooks"></div>
+   </div>
+   <div class="swiper-button-prev"></div>
+   <div class="swiper-button-next"></div>
+</div>
+<div class="card">
+   <div class="card__descricao">
+      <div class="descricao">
+         <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+         <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
+         <p class="descricao__texto">Contruindo uma aplicação integrada com a plataforma do Google.</p>  
+      </div>
+      </div class ="swiper-slide"><img src="img/Angular.png" alt="livro sobre apache kafka e spring boot da Alurabooks".></div>
+</div>
+<div class="card__botoes"></div>
+</section>
+<div class="topicos">
+   <h2 class="topicos__titulo"> topicos visi
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>const swiper = new Swiper('.swiper', {spaceBetween: 10, slidesPerView: 3, pagination: {el: '.swiper-pagination',type: 'bullets', }})</script>
+<hr/>
+
+</body>
+</html>
